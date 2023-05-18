@@ -1,6 +1,8 @@
 import ArgumentParser
 import Foundation
 import SwiftShieldCore
+import Darwin
+setbuf(stdout, nil)
 
 struct Swiftshield: ParsableCommand {
     static var configuration = CommandConfiguration(
